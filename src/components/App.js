@@ -1,6 +1,6 @@
-import { useState } from 'react'
-import './App.css'
-
+import { useState, useEffect } from 'react'
+import '../styles/App.css'
+import Proyectos from './proyectos'
 
 function Menu_boton () {
   const [state, setState] = useState(false)
@@ -38,21 +38,16 @@ function Menu_boton () {
   )
 }
 
-export default function Portafolio () {
+function Inicio () {
+
+  useEffect(() => {
+    console.log("Componente de la seccion 'Inicio'✅")
+    return () => console.log("Componente de la seccion 'Inicio' cerrado.")
+  },)
+
   return (
     <>
-      <body className='fondo_principal'>
-        <Menu_boton />
-        <nav className='nav_principal'>
-          <ul className='ul_principal'>
-            <li className={'li_principal'}>inicio</li>
-            <li className={'li_principal'}>Proyectos</li>
-            <li className={'li_principal'}>Experiencia</li>
-            <li className={'li_principal'}>Sobre mi</li>
-            <li className={'li_principal'}>Contacto</li>
-          </ul>
-        </nav>
-        <header className='encabezado_principal'>
+      <header className='encabezado_principal'>
           <div>
             <h1 style={{fontSize: '100px', marginBottom: '100px'}}>
               Hola, Soy <br/>
@@ -65,7 +60,44 @@ export default function Portafolio () {
             </p>
           </div>
         </header>
-      </body>
+    </>
+  )
+}
+
+export default function Portafolio () {
+
+  useEffect(() => {
+    console.log("Pagina iniciada correctamente✅")
+    return () => console.log("Has salido de la pagina")
+  }, [])
+
+  const [seccion, setSecciones] = useState('inicio')
+
+  let secciones = function () {  
+    switch (seccion){
+      case 'inicio':
+        return <Inicio />
+
+      case 'proyectos': 
+        return <Proyectos />
+    }
+  }
+
+  return (
+    <>
+      <div className='fondo_principal'>
+        <Menu_boton />
+        <nav className='nav_principal'>
+          <ul className='ul_principal'>
+            <li onClick={() => setSecciones('inicio')} className={'li_principal'}>Inicio</li>
+            <li onClick={() => setSecciones('proyectos')} className={'li_principal'}>Proyectos</li>
+            <li className={'li_principal'}>Experiencia</li>
+            <li className={'li_principal'}>Sobre mi</li>
+            <li className={'li_principal'}>Contacto</li>
+          </ul>
+        </nav>
+        {secciones()}
+      </div>
     </>
   )
 }
