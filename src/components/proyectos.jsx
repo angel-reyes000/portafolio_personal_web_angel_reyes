@@ -1,11 +1,11 @@
 import '../styles/proyectos.scss'
-import CvAnterior from '../assets/Foto pagina cv anterior.png'
-import AutomatizacoinZapier from '../assets/Foto Automatizacion de asistente educativo en zapier.png'
-import CalculadoraPyQt6_Python from '../assets/Foto calculadora pyqt6 python.png'
-import Chatbot_Botpress from '../assets/Foto chatbot con botpress.png'
-import TicTacToePyQt6_Python from '../assets/Foto tic-Tac-Toe PyQt6 Python.png'
-import SemaforoPyQt6_Python from '../assets/Foto semaforo PyQt6 Python.png'
-import PortafolioReact from '../assets/Foto portafolio React.png'
+import CvAnterior from '../assets/imagenes_proyectos/Foto pagina cv anterior.png'
+import AutomatizacoinZapier from '../assets/imagenes_proyectos/Foto Automatizacion de asistente educativo en zapier.png'
+import CalculadoraPyQt6_Python from '../assets/imagenes_proyectos/Foto calculadora pyqt6 python.png'
+import Chatbot_Botpress from '../assets/imagenes_proyectos/Foto chatbot con botpress.png'
+import TicTacToePyQt6_Python from '../assets/imagenes_proyectos/Foto tic-Tac-Toe PyQt6 Python.png'
+import SemaforoPyQt6_Python from '../assets/imagenes_proyectos/Foto semaforo PyQt6 Python.png'
+import PortafolioReact from '../assets/imagenes_proyectos/Foto portafolio React.png'
 
 export default function Proyectos () {
     let ids = 0;
@@ -26,11 +26,11 @@ export default function Proyectos () {
                 <div className='seccion_scroll'>
                     {proyectos.map(proyecto => (
                             <div key={proyecto.id} className='tarjetas_proyectos'>
-                                <a href={proyecto.url} target='_blank'><img src={proyecto.foto} alt={proyecto.titulo}/></a>
+                                {proyecto.url !== '' ? <a href={proyecto.url} target='_blank'><img src={proyecto.foto} alt={proyecto.titulo}/></a> : <img src={proyecto.foto} alt={proyecto.titulo}/>}
                                 <div className='cajas_textos_proyectos'>
                                     <h2>{proyecto.titulo}</h2>
                                     <p>{proyecto.descripcion}</p>
-                                    {proyecto.url !== '' ? <p>Haz click en la imagen para Ingresar a la pagina.</p> : ''}
+                                    {proyecto.url !== '' ? <p style={{fontWeight: 'bold'}}>Haz click en la imagen para Ingresar a la pagina.</p> : ''}
                                 </div>
                             </div>
                         ) 
