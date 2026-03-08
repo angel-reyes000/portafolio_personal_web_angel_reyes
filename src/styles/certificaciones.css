@@ -25,23 +25,6 @@
   display: none;
 }
 
-@media screen and (max-width: 800px) {
-  .seccion_certificaciones {
-    height: 74%;
-  }
-  .seccion_certificaciones .scroll_certificaciones {
-    height: 85%;
-  }
-  .seccion_certificaciones .scroll_certificaciones .certificaciones {
-    width: 46%;
-  }
-  .seccion_certificaciones .scroll_certificaciones .encabezado_certificaciones {
-    margin-bottom: 30%;
-  }
-  .flechas {
-    display: none;
-  }
-}
 .certificaciones {
   display: grid;
   grid-template-rows: auto;
@@ -115,5 +98,22 @@
   }
   to {
     transform: translateY(400%);
+  }
+}
+@media screen and (max-width: 800px) {
+  .seccion_certificaciones {
+    height: 74%;
+  }
+  .seccion_certificaciones .scroll_certificaciones {
+    height: 85%;
+  }
+  .seccion_certificaciones .scroll_certificaciones .certificaciones {
+    width: 46%;
+  }
+  .seccion_certificaciones .scroll_certificaciones .encabezado_certificaciones {
+    margin-bottom: 30%;
+  }
+  .flechas {
+    display: none;
   }
 }/*# sourceMappingURL=certificaciones.css.map */
