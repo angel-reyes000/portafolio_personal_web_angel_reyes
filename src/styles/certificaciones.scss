@@ -27,6 +27,24 @@ $sobra_tarjetas: rgba(0, 217, 255, 0.1);
     display: none;
 }
 
+@media screen and (max-width: 800px){
+    .seccion_certificaciones{
+        height: 74%;
+        .scroll_certificaciones {
+            height: 85%;
+            .certificaciones{
+                width: 46%;
+            }
+            .encabezado_certificaciones {
+                margin-bottom: 30%;
+            }
+        }
+    }
+    .flechas{
+        display: none;
+    }
+}
+
 .certificaciones {
     display: grid;
     grid-template-rows: auto;
