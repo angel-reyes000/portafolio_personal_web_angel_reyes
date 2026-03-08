@@ -51,6 +51,7 @@
 }
 .certificaciones p {
   font-size: clamp(0.8rem, 1vw, 1rem);
+  max-width: 90%;
 }
 
 .certificaciones:hover {
