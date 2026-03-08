@@ -1,5 +1,6 @@
 .fondo_principal {
   height: 100vh;
+  width: 100vw;
   background-image: url('../assets/Fondo\ portafolio.png');
   background-size: cover;
   background-position: top;
@@ -33,7 +34,7 @@
 }
 
 .li_principal {
-  display: inline-block;
+  display: flex;
   justify-content: center;
   list-style: none;
   font-size: 18px;
@@ -66,10 +67,22 @@
 }
 
 .encabezado_principal {
+  display: block;
   color: white;
-  margin-top: 120px;
+  margin-top: 6%;
   margin-left: 260px;
+  font-size: 50px;
+  width: 80%;
+}
 
+.titulo_principal {
+  font-size: 200%;
+  margin-bottom: 7%;
+}
+
+.descripcion_principal {
+  font-size: 45%;
+  width: 85%;
 }
 
 .menu {
@@ -155,4 +168,49 @@
   margin-top: -40px;
   margin-left: 35px;
   color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .fondo_principal {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .nav_principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20%;
+    .ul_principal{
+      display: grid;
+      justify-items: center;
+      flex-wrap: wrap;
+      width: 50%;
+      margin-top: 10%;
+    }
+    .li_principal {
+      font-size: 100%;
+      display: inline;
+      padding: 6%;
+    }
+  }
+  .boton_abrir_menu {
+    font-size: 200%;
+  }
+  .encabezado_principal {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .titulo_principal {
+      font-size: 120%;
+      margin-left: -260px;
+      width: 200%;
+    }
+    .descripcion_principal {
+      margin-left: -260px;
+      width: 300%;
+    }
+  }
+
 }

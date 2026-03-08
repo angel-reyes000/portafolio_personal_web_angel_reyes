@@ -49,17 +49,15 @@ function Inicio () {
   return (
     <>
       <header className='encabezado_principal'>
-          <div>
-            <h1 style={{fontSize: '100px', marginBottom: '100px'}}>
+            <h1 className='titulo_principal'>
               Hola, Soy <br/>
               Angel Reyes...
             </h1>
-            <p style={{fontSize: '20px'}}>
+            <p className='descripcion_principal'>
               Desarrollador de software con interés en programación, back end y front end. Mis insignias reflejan la adquisición<br/>
-              de habilidades técnicas en programación, resolución de problemas, desarrollo web y fundamentos de inteligencia artificial.<br/>
+              de habilidades técnicas en programación, resolución de problemas, desarrollo web y fundamentos de inteligencia artificial.
               Me enfoco en el aprendizaje continuo y la aplicación práctica de conocimientos en proyectos reales.<br />               
             </p>
-          </div>
         </header>
     </>
   )
