@@ -52,6 +52,7 @@ $sobra_tarjetas: rgba(0, 217, 255, 0.1);
     }
     p {
         font-size: clamp(0.8rem, 1vw, 1rem);
+        max-width: 90%;
     }
 }
 
@@ -99,5 +100,23 @@ $sobra_tarjetas: rgba(0, 217, 255, 0.1);
     }
     to {
         transform: translateY(400%);
+    }
+}
+
+@media screen and (max-width: 800px){
+    .seccion_certificaciones{
+        height: 74%;
+        .scroll_certificaciones {
+            height: 85%;
+            .certificaciones{
+                width: 46%;
+            }
+            .encabezado_certificaciones {
+                margin-bottom: 30%;
+            }
+        }
+    }
+    .flechas{
+        display: none;
     }
 }

@@ -51,6 +51,7 @@
 }
 .certificaciones p {
   font-size: clamp(0.8rem, 1vw, 1rem);
+  max-width: 90%;
 }
 
 .certificaciones:hover {
@@ -97,5 +98,22 @@
   }
   to {
     transform: translateY(400%);
+  }
+}
+@media screen and (max-width: 800px) {
+  .seccion_certificaciones {
+    height: 74%;
+  }
+  .seccion_certificaciones .scroll_certificaciones {
+    height: 85%;
+  }
+  .seccion_certificaciones .scroll_certificaciones .certificaciones {
+    width: 46%;
+  }
+  .seccion_certificaciones .scroll_certificaciones .encabezado_certificaciones {
+    margin-bottom: 30%;
+  }
+  .flechas {
+    display: none;
   }
 }/*# sourceMappingURL=certificaciones.css.map */

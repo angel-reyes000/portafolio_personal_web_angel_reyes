@@ -32,14 +32,13 @@
 .tarjetas_proyectos {
   display: grid;
   grid-template-columns: 60% 40%;
-  justify-content: center;
+  justify-items: center;
   background-color: rgba(128, 0, 0, 0.8);
   width: 90%;
   height: 90%;
   margin: 1% 0% 2% 0%;
   border: 3px solid black;
   border-radius: 50px;
-  padding: 0% 0% 0% 5%;
   box-sizing: border-box;
 }
 .tarjetas_proyectos img {
@@ -67,4 +66,34 @@
 
 .cajas_textos_proyectos::-webkit-scrollbar {
   display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .fondo_proyectos {
+    height: 71%;
+    display: block;
+    justify-items: center;
+    margin-left: 5%;
+  }
+  .fondo_proyectos h1 {
+    font-size: 150%;
+  }
+  .seccion_scroll {
+    width: 80%;
+    padding: 5%;
+    margin-left: 2.5%;
+    height: 70%;
+  }
+  .seccion_scroll .tarjetas_proyectos {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .seccion_scroll .tarjetas_proyectos img {
+    width: 100%;
+    margin-left: 5%;
+  }
+  .seccion_scroll .tarjetas_proyectos .cajas_textos_proyectos {
+    margin: 0% 0% 0% 5%;
+  }
 }/*# sourceMappingURL=proyectos.css.map */
