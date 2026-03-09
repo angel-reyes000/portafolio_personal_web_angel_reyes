@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import '../styles/App.css'
 import Proyectos from './proyectos'
 import Certificaciones from './certificaciones'
+import Contacto from './contacto'
 
 function Menu_boton () {
   const [state, setState] = useState(false)
@@ -80,8 +81,10 @@ export default function Portafolio () {
       case 'proyectos': 
         return <Proyectos />
       
-        case 'certificaciones':
-          return <Certificaciones />
+      case 'certificaciones':
+        return <Certificaciones />
+      case 'contacto':
+        return <Contacto />
     }
   }
 
@@ -95,7 +98,7 @@ export default function Portafolio () {
             <li onClick={() => setSecciones('proyectos')} className={'li_principal'}>Proyectos</li>
             <li className={'li_principal'}>Experiencia</li>
             <li onClick={() => setSecciones('certificaciones')} className={'li_principal'}>Certificaciones</li>
-            <li className={'li_principal'}>Contacto</li>
+            <li onClick={() => setSecciones('contacto')} className={'li_principal'}>Contacto</li>
           </ul>
         </nav>
         {secciones()}
