@@ -1,0 +1,91 @@
+$sobra_tarjetas: rgba(0, 217, 255, 0.1);
+
+.seccion_contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 84%;
+}
+
+.tarjeta_contacto {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(128, 0, 0, 0.8);
+    height: 85%;
+    width: 40%;
+    padding-left: 3%;
+    box-sizing: border-box;
+    border-radius: 10%;
+    box-shadow: 30px 60px 40px $sobra_tarjetas, -30px 60px 40px $sobra_tarjetas, 60px -10px 40px $sobra_tarjetas, -40px -10px 40px $sobra_tarjetas;
+    color: white;
+    border: 20px solid rgba(21, 21, 21, 0.7);;
+}
+
+.encabezado_contacto {
+    font-size: 150%;
+    margin-right: 50%;
+    padding: 0%;
+    margin-bottom: -6%;
+}
+
+.div_imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 20%;
+    height: 20%;
+    margin-right: 0%;
+    border-radius: 20%;
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    img{
+        width: 120%;
+    }
+}
+
+.div_imagen:hover {
+    border: 5px solid rgb(0, 157, 255);
+}
+
+.div_descripcion_imagenes {
+    display: flex;
+    margin: 0% 30% 0% 3%;
+    font-weight: bold;
+}
+
+.div_enlaces {
+    text-decoration: none;
+    color: rgb(0, 168, 190);
+}
+
+.div_enlaces:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+    .seccion_contacto {
+        height: 74%;
+        .encabezado_contacto {
+            font-size: 120%;
+        }
+    }
+    .tarjeta_contacto {
+        height: 75%;
+        width: 80%;
+        .div_imagen {
+            width: 25%;
+            img {
+                width: 150%;
+            }
+        }
+        .div_descripcion_imagenes {
+            font-size: 70%;
+            width: 60%;
+            margin-right: 5%;
+        }
+    }
+}
