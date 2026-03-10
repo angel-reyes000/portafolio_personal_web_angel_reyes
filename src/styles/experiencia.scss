@@ -1,0 +1,75 @@
+$sobra_tarjetas: rgba(0, 217, 255, 0.1);
+
+.seccion_experiencia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 84%;
+    color: white;
+}
+
+.titulo_experiencia {
+    display: flex;
+    justify-content: center;
+}
+
+.tarjeta_experiencia {
+    background-color: rgba(110, 11, 11, 0.9);
+    height: 80%;
+    width: 80%;
+    padding: 0.5% 3% 0% 3%;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    border-radius: 60px;
+    border: 25px solid rgba(21, 21, 21, 0.7);
+    box-shadow: 30px 60px 40px $sobra_tarjetas, -30px 60px 40px $sobra_tarjetas, 60px -10px 40px $sobra_tarjetas, -40px -10px 40px $sobra_tarjetas;
+    h1 {
+        font-size: 220%;
+    }
+    h2 {
+        font-size: 190%;
+        margin-top: 2%;
+    }
+    h3 {
+        margin: 4% 0% -1% 0%;
+    }
+}
+
+.tarjeta_experiencia::-webkit-scrollbar {
+    display: none;
+}
+
+.descripciones_experiencia {
+    font-size: 120%;
+    margin-bottom: 6%;
+    a {
+        color: rgb(217, 255, 0);
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: rgb(0, 221, 255);
+    }
+}
+
+.lista_desordenada_experiencia {
+    li {
+        margin-bottom: 3%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .seccion_experiencia {
+        display: flex;
+        justify-content: center;
+        height: 74%;
+        width: 100%;
+    }
+    .tarjeta_experiencia {
+        width: 90%;
+        h3 {
+            margin-top: 20%;
+        }
+    }
+}
