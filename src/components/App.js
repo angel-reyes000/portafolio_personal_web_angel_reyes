@@ -21,14 +21,11 @@ function Menu_boton () {
                   </div>
                   <div className='div_ul_menu'>
                     <ul className='ul_menu'>
-                      <li className='li_menu'>Experiencia</li>
-                      <li className='li_menu'>Formacion</li>
-                      <li className='li_menu'>Habilidades tecnicas</li>
-                      <li className='li_menu'>Stack</li>
+                      <li className='li_menu'>Habilidades tecnicas y Stack</li>
                       <li className='li_menu'>Sobre mi</li>
                     </ul>
                   </div>
-                  <hr style={{width: '70%', marginTop: '50px'}}/>
+                  <hr style={{width: '70%', marginTop: '120%'}}/>
                   <div className='div_descargar_cv'>
                     <a>Descargar CV</a>
                   </div>
