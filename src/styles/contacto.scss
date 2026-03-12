@@ -68,7 +68,8 @@ $sobra_tarjetas: rgba(0, 217, 255, 0.1);
 
 @media screen and (max-width: 800px) {
     .seccion_contacto {
-        height: 74%;
+        height: 80%;
+        margin-bottom: 30%;
         .encabezado_contacto {
             font-size: 120%;
         }
@@ -78,8 +79,10 @@ $sobra_tarjetas: rgba(0, 217, 255, 0.1);
         width: 80%;
         .div_imagen {
             width: 25%;
+            margin-bottom: 10%;
             img {
                 width: 150%;
+                border-radius: 300px;
             }
         }
         .div_descripcion_imagenes {
