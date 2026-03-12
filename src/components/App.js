@@ -55,7 +55,7 @@ export default function Portafolio () {
                         <li onClick={() => setSecciones('sobre mi')} className='li_menu'>Sobre mi</li>
                       </ul>
                     </div>
-                    <hr style={{width: '70%', marginTop: '120%'}}/>
+                    <hr />
                     <div className='div_descargar_cv'>
                       <a>Descargar CV</a>
                     </div>
