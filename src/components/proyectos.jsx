@@ -26,7 +26,7 @@ export default function Proyectos () {
                 <div className='seccion_scroll'>
                     {proyectos.map(proyecto => (
                             <div key={proyecto.id} className='tarjetas_proyectos'>
-                                {proyecto.url !== '' ? <a href={proyecto.url} target='_blank' style={{marginLeft: '5%'}}><img src={proyecto.foto} alt={proyecto.titulo} style={{marginLeft: '0%'}}/></a> : <img src={proyecto.foto} alt={proyecto.titulo}/>}
+                                {proyecto.url !== '' ? <a href={proyecto.url} target='_blank' rel="noreferrer" style={{marginLeft: '5%'}}><img src={proyecto.foto} alt={proyecto.titulo} style={{marginLeft: '0%'}}/></a> : <img src={proyecto.foto} alt={proyecto.titulo}/>}
                                 <div className='cajas_textos_proyectos'>
                                     <h2>{proyecto.titulo}</h2>
                                     <p>{proyecto.descripcion}</p>

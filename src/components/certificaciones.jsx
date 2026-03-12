@@ -75,7 +75,7 @@ export default function Certificaciones () {
                     <div className='encabezado_certificaciones'>
                         <div>
                             <h1>Mis Certificaciones</h1>
-                            <p><a href='https://www.credly.com/users/angel-reyes.377142c9' target='_blank'>Haz click aqui para mirar mi perfil de Credly con todas mis certificaciones!</a></p>
+                            <p><a href='https://www.credly.com/users/angel-reyes.377142c9' target='_blank' rel="noreferrer">Haz click aqui para mirar mi perfil de Credly con todas mis certificaciones!</a></p>
                         </div>
                         <div className='flechas'>
                             ↕
