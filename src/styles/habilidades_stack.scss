@@ -1,0 +1,60 @@
+$sobra_tarjetas: rgba(0, 217, 255, 0.1);
+
+.seccion_habilidades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 81%;
+}
+
+.tarjeta_habilidades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(128, 0, 0, 0.8);
+    width: 80%;
+    height: 80%;
+    border-radius: 50px;
+    border: 20px solid rgba(21, 21, 21, 0.7);
+    color: white;
+    box-shadow: 30px 60px 40px $sobra_tarjetas, -30px 60px 40px $sobra_tarjetas, 60px -10px 40px $sobra_tarjetas, -40px -10px 40px $sobra_tarjetas;
+}
+
+.texto_habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    height: 90%;
+    font-size: 150%;
+    padding: 0% 0% 0% 5%;
+    overflow: scroll;
+    ul {
+        width: 80%;
+        li {
+            margin-bottom: 2%;
+        }
+    }
+
+}
+
+.texto_habilidades::-webkit-scrollbar {
+    display: none;
+}
+
+.encabezado_habilidades {
+    padding-right: 15%;
+    width: 100%;
+    margin-bottom: -1%;
+}
+
+@media screen and (max-width: 800px) {
+    .seccion_habilidades {
+        height: 71%;
+    }
+    .texto_habilidades{
+        ul {
+            li {
+                margin-bottom: 10%;
+            }
+        }
+    }
+}
