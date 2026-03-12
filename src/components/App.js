@@ -4,39 +4,7 @@ import Proyectos from './proyectos'
 import Certificaciones from './certificaciones'
 import Contacto from './contacto'
 import Experiencia from './experiencia'
-
-function Menu_boton () {
-  const [state, setState] = useState(false)
-  return(
-    <>
-      {state ? (
-                <div className='menu'>
-                  <div className='encabezado_menu'>
-                    <div className='titulo_menu'>
-                      <h2 style={{fontSize: '60px', marginBottom: '-20px'}}>A.R.</h2>
-                      <p>Desarrollador de Software</p>
-                    </div>
-                    <div className='div_boton_cerrar_menu'>
-                      <button onClick={() => setState(!state)} className='boton_cerrar_menu'>×</button>
-                    </div>
-                  </div>
-                  <div className='div_ul_menu'>
-                    <ul className='ul_menu'>
-                      <li className='li_menu'>Habilidades tecnicas y Stack</li>
-                      <li className='li_menu'>Sobre mi</li>
-                    </ul>
-                  </div>
-                  <hr style={{width: '70%', marginTop: '120%'}}/>
-                  <div className='div_descargar_cv'>
-                    <a>Descargar CV</a>
-                  </div>
-                </div>
-                ) : (
-                <button onClick={() => setState(!state)} className={'boton_abrir_menu'}>|||</button>
-                )}
-    </>
-  )
-}
+import Habilidades_stack from './habilidades_stack'
 
 function Inicio () {
 
@@ -63,13 +31,45 @@ function Inicio () {
 }
 
 export default function Portafolio () {
+  const [seccion, setSecciones] = useState('inicio')
+
+  function Menu_boton () {
+    const [state, setState] = useState(false)
+    return(
+      <>
+        {state ? (
+                  <div className='menu'>
+                    <div className='encabezado_menu'>
+                      <div className='titulo_menu'>
+                        <h2 style={{fontSize: '60px', marginBottom: '-20px'}}>A.R.</h2>
+                        <p>Desarrollador de Software</p>
+                      </div>
+                      <div className='div_boton_cerrar_menu'>
+                        <button onClick={() => setState(!state)} className='boton_cerrar_menu'>×</button>
+                      </div>
+                    </div>
+                    <div className='div_ul_menu'>
+                      <ul className='ul_menu'>
+                        <li onClick={() => setSecciones('habilidades y stack')} className='li_menu'>Habilidades tecnicas y Stack</li>
+                        <li className='li_menu'>Sobre mi</li>
+                      </ul>
+                    </div>
+                    <hr style={{width: '70%', marginTop: '120%'}}/>
+                    <div className='div_descargar_cv'>
+                      <a>Descargar CV</a>
+                    </div>
+                  </div>
+                  ) : (
+                  <button onClick={() => setState(!state)} className={'boton_abrir_menu'}>|||</button>
+                  )}
+      </>
+    )
+  }
 
   useEffect(() => {
     console.log("Pagina iniciada correctamente✅")
     return () => console.log("Has salido de la pagina")
   }, [])
-
-  const [seccion, setSecciones] = useState('inicio')
 
   let secciones = function () {  
     switch (seccion){
@@ -87,6 +87,8 @@ export default function Portafolio () {
       
       case 'experiencia':
         return <Experiencia />
+      case 'habilidades y stack':
+        return <Habilidades_stack />
     }
   }
 
