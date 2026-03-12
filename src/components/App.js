@@ -5,6 +5,7 @@ import Certificaciones from './certificaciones'
 import Contacto from './contacto'
 import Experiencia from './experiencia'
 import Habilidades_stack from './habilidades_stack'
+import Sobre_mi from './sobre_mi'
 
 function Inicio () {
 
@@ -51,7 +52,7 @@ export default function Portafolio () {
                     <div className='div_ul_menu'>
                       <ul className='ul_menu'>
                         <li onClick={() => setSecciones('habilidades y stack')} className='li_menu'>Habilidades tecnicas y Stack</li>
-                        <li className='li_menu'>Sobre mi</li>
+                        <li onClick={() => setSecciones('sobre mi')} className='li_menu'>Sobre mi</li>
                       </ul>
                     </div>
                     <hr style={{width: '70%', marginTop: '120%'}}/>
@@ -87,8 +88,13 @@ export default function Portafolio () {
       
       case 'experiencia':
         return <Experiencia />
+
       case 'habilidades y stack':
         return <Habilidades_stack />
+
+      case 'sobre mi':
+      default:
+        return <Sobre_mi />
     }
   }
 
