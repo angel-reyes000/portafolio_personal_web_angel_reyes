@@ -1,6 +1,13 @@
 import '../styles/experiencia.scss'
+import { useEffect } from 'react'
 
 export default function Experiencia () {
+
+    useEffect(() => {
+        console.log("Componente de la seccion 'Experiencia' abierto✅")
+        return () => console.log("Componente de la seccion 'Experiencia' cerrado.❎")
+    })
+
     return (
         <>
             <div className='seccion_experiencia'>

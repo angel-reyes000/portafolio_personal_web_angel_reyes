@@ -68,14 +68,15 @@ $sobra_tarjetas: rgba(0, 217, 255, 0.1);
 
 @media screen and (max-width: 800px) {
     .seccion_contacto {
-        height: 80%;
-        margin-bottom: 30%;
+        height: 100vh;
+        margin-bottom: 10%;
+        margin-top: -30%;
         .encabezado_contacto {
             font-size: 120%;
         }
     }
     .tarjeta_contacto {
-        height: 75%;
+        height: 55%;
         width: 80%;
         .div_imagen {
             width: 25%;

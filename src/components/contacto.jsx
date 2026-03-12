@@ -1,8 +1,15 @@
 import '../styles/contacto.scss'
 import iconoWhatsApp from '../assets/imagenes_contacto/Icono de WhatsApp.png'
 import iconoGmail from '../assets/imagenes_contacto/Icono Gmail.png'
+import { useEffect } from 'react'
 
 export default function Contacto () {
+
+    useEffect(() => {
+        console.log("Componente de la seccion 'Contacto' abierto✅")
+        return () => console.log("Componente de la seccion 'Contacto' cerrado.❎")
+    })
+
     return (
         <>
             <div className="seccion_contacto">
