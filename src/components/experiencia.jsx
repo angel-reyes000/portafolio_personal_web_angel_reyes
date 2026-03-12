@@ -1,6 +1,13 @@
 import '../styles/experiencia.scss'
+import { useEffect } from 'react'
 
 export default function Experiencia () {
+
+    useEffect(() => {
+        console.log("Componente de la seccion 'Experiencia' abierto✅")
+        return () => console.log("Componente de la seccion 'Experiencia' cerrado.❎")
+    })
+
     return (
         <>
             <div className='seccion_experiencia'>
@@ -22,11 +29,11 @@ export default function Experiencia () {
                     <div className='descripciones_experiencia'>
                         <h3><b>INTELIGENCIA ARTIFICIAL DE ASISTENTE EDUCATIVO</b></h3>
                         <p>Asistente Educativo IA: Plataforma interactiva diseñada para el sector educativo que integra el modelo GPT-4o Mini de OpenAI mediante flujos de automatización en Zapier.</p>
-                        <a href='https://asistente-educativo.zapier.app/' target='_blank'>https://asistente-educativo.zapier.app/</a>
+                        <a href='https://asistente-educativo.zapier.app/' target='_blank' rel="noreferrer">https://asistente-educativo.zapier.app/</a>
 
                         <h3><b>CHATBOT PERSONALIZADO (BOTPRESS)</b></h3>
                         <p>Agente conversacional inteligente desarrollado con Botpress, enfocado en la atención al usuario y resolución de dudas mediante interfaces de chat modernas</p>
-                        <a href='https://cdn.botpress.cloud/webchat/v3.6/shareable.html?configUrl=https://files.bpcontent.cloud/2026/01/23/02/20260123025137-I1NC6KEI.json' target='_blank'>https://cdn.botpress.cloud/webchat/v3.6/shareable.html?configUrl=https://files.bpcontent.cloud/2026/01/23/02/20260123025137-I1NC6KEI.json</a>
+                        <a href='https://cdn.botpress.cloud/webchat/v3.6/shareable.html?configUrl=https://files.bpcontent.cloud/2026/01/23/02/20260123025137-I1NC6KEI.json' target='_blank' rel="noreferrer">https://cdn.botpress.cloud/webchat/v3.6/shareable.html?configUrl=https://files.bpcontent.cloud/2026/01/23/02/20260123025137-I1NC6KEI.json</a>
 
                         <h3><b>DESARROLLO WEB (FRONT-END)</b></h3>
                         <p>
@@ -34,13 +41,13 @@ export default function Experiencia () {
                             destacados utilizando React.js para una navegación fluida. 
                             Web CV Personal (Legacy): Diseño y desarrollo de sitio web personal para exposición de currículum en línea (Desarrollado con HTML/CSS).
                         </p>
-                        <a href='https://angelreyescvv.netlify.app/' target='_blank'>https://angelreyescvv.netlify.app/</a>
+                        <a href='https://angelreyescvv.netlify.app/' target='_blank' rel="noreferrer">https://angelreyescvv.netlify.app/</a>
 
                         <h3><b>INTERFACES GRÁFICAS DE USUARIO CON PYTHON (PYQT6)</b></h3>
                         <p>Interfaces Gráficas (GUI) con Python: Colección de herramientas funcionales desarrolladas con PyQt6, incluyendo calculadoras y juegos de 
                             lógica (Tic-Tac-Toe), aplicando principios de Programación Orientada a Objetos (POO).
                         </p>
-                        <a href='https://github.com/angel-reyes000/Proyectos-Python-PyQt6.git' target='_blank'>https://github.com/angel-reyes000/Proyectos-Python-PyQt6.git</a>
+                        <a href='https://github.com/angel-reyes000/Proyectos-Python-PyQt6.git' target='_blank' rel="noreferrer">https://github.com/angel-reyes000/Proyectos-Python-PyQt6.git</a>
                     </div>
                 </div>
             </div>

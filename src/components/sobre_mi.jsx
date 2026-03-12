@@ -1,7 +1,14 @@
 import '../styles/sobre_mi.scss'
 import ImagenAngel from '../assets/imagen_sobre_mi/Imagen sobre mi CV.png'
+import { useEffect } from 'react'
 
 export default function Sobre_mi () {
+
+    useEffect(() => {
+        console.log("Componente de la seccion 'Sobre_mi' abierto✅")
+        return () => console.log("Componente de la seccion 'Sobre_mi' abierto✅")
+    })
+
     return (
         <>
             <div className="seccion_sobre_mi">

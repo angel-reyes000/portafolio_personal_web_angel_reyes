@@ -10,8 +10,8 @@ import Sobre_mi from './sobre_mi'
 function Inicio () {
 
   useEffect(() => {
-    console.log("Componente de la seccion 'Inicio'✅")
-    return () => console.log("Componente de la seccion 'Inicio' cerrado.")
+    console.log("Componente de la seccion 'Inicio' abierto✅")
+    return () => console.log("Componente de la seccion 'Inicio' cerrado.❎")
   },)
 
   return (
@@ -36,6 +36,12 @@ export default function Portafolio () {
 
   function Menu_boton () {
     const [state, setState] = useState(false)
+
+    useEffect(() => {
+      console.log("Menu Abierto✅")
+      return () => console.log("Menu cerrado❎")
+    }, [state])
+
     return(
       <>
         {state ? (
@@ -55,7 +61,7 @@ export default function Portafolio () {
                         <li onClick={() => setSecciones('sobre mi')} className='li_menu'>Sobre mi</li>
                       </ul>
                     </div>
-                    <hr style={{width: '70%', marginTop: '120%'}}/>
+                    <hr />
                     <div className='div_descargar_cv'>
                       <a>Descargar CV</a>
                     </div>

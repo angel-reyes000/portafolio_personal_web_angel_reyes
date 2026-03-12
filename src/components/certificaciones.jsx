@@ -1,3 +1,5 @@
+import { useEffect } from 'react'
+
 import '../styles/certificaciones.scss'
 import img1 from '../assets/imagenes_certificaciones/Foto certificado AWS cloud foundations.png'
 import img2 from '../assets/imagenes_certificaciones/Foto certificado AWS cloud operations.png'
@@ -68,6 +70,12 @@ const Certificados = [
 ]
 
 export default function Certificaciones () {
+
+    useEffect(() => {
+        console.log("Componente de la seccion 'Certificaciones' abierto✅")
+        return () => console.log("Componente de la seccion 'Certificaciones' cerrado.❎")
+    })
+
     return (
         <>
             <div className='seccion_certificaciones'>
@@ -75,20 +83,18 @@ export default function Certificaciones () {
                     <div className='encabezado_certificaciones'>
                         <div>
                             <h1>Mis Certificaciones</h1>
-                            <p><a href='https://www.credly.com/users/angel-reyes.377142c9' target='_blank'>Haz click aqui para mirar mi perfil de Credly con todas mis certificaciones!</a></p>
+                            <p><a href='https://www.credly.com/users/angel-reyes.377142c9' target='_blank' rel="noreferrer">Haz click aqui para mirar mi perfil de Credly con todas mis certificaciones!</a></p>
                         </div>
                         <div className='flechas'>
                             ↕
                         </div>
                     </div>                    
                     {Certificados.map(certificacion => (
-                        <>
                             <div key={certificacion.id} className='certificaciones'>
                                 <img src={certificacion.src} alt={certificacion.titulo}/>
                                 <h3>{certificacion.titulo}</h3>
                                 <p>{certificacion.academia}</p>
                             </div>
-                        </>
                     ))}
                 </div>
             </div>

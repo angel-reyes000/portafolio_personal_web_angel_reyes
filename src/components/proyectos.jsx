@@ -6,8 +6,15 @@ import Chatbot_Botpress from '../assets/imagenes_proyectos/Foto chatbot con botp
 import TicTacToePyQt6_Python from '../assets/imagenes_proyectos/Foto tic-Tac-Toe PyQt6 Python.png'
 import SemaforoPyQt6_Python from '../assets/imagenes_proyectos/Foto semaforo PyQt6 Python.png'
 import PortafolioReact from '../assets/imagenes_proyectos/Foto portafolio React.png'
+import { useEffect } from 'react'
 
 export default function Proyectos () {
+
+    useEffect(() => {
+        console.log("Componente de la seccion 'Proyectos' abierto✅")
+        return () => console.log(("Componente de la seccion 'Proyectos' cerrado"))
+    })
+
     let ids = 0;
     const proyectos = [
         {id: ids++, foto: PortafolioReact, url: '', titulo: 'Portafolio personal con React', descripcion: 'Es un portafolio web personal donde se presenta mi perfil de desarrollador, mis habilidades, algunos proyectos realizados y formas de contacto. Funciona como un currículum digital para mostrar experiencia y trabajo en desarrollo web.\nLa programacion se hizo con el Framework "React" y lenguajes como JavaScript, HTML, CSS y SCSS'},
@@ -26,7 +33,7 @@ export default function Proyectos () {
                 <div className='seccion_scroll'>
                     {proyectos.map(proyecto => (
                             <div key={proyecto.id} className='tarjetas_proyectos'>
-                                {proyecto.url !== '' ? <a href={proyecto.url} target='_blank' style={{marginLeft: '5%'}}><img src={proyecto.foto} alt={proyecto.titulo} style={{marginLeft: '0%'}}/></a> : <img src={proyecto.foto} alt={proyecto.titulo}/>}
+                                {proyecto.url !== '' ? <a href={proyecto.url} target='_blank' rel="noreferrer" style={{marginLeft: '5%'}}><img src={proyecto.foto} alt={proyecto.titulo} style={{marginLeft: '0%'}}/></a> : <img src={proyecto.foto} alt={proyecto.titulo}/>}
                                 <div className='cajas_textos_proyectos'>
                                     <h2>{proyecto.titulo}</h2>
                                     <p>{proyecto.descripcion}</p>

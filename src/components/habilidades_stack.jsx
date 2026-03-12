@@ -1,6 +1,13 @@
 import '../styles/habilidades_stack.scss'
+import { useEffect } from 'react'
 
 export default function Habilidades_stack () {
+
+    useEffect(() => {
+        console.log("Componente de la seccion 'Habilidades y stack' abierto✅")
+        return () => console.log("Componente de la seccion 'Habilidades y stack' abierto✅")
+    })
+
     return (
         <>
             <div className='seccion_habilidades'>
