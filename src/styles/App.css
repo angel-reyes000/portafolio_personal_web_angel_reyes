@@ -115,22 +115,27 @@
 }
 
 .ul_menu {
+  display: grid;
+  grid-template-rows: auto auto;
+  align-content: center;
+  justify-items: center;
   list-style: none;
-  width: 90%;
+  width: 100%;
   margin: 0px;
   padding: 0px;
+  text-align: center;
 }
 
 .li_menu {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 12%;
+  margin: 0% 0% 10% 0%;
   color: white;
-  padding: 20px;
+  padding: 10% 5% 10% 5%;
   box-sizing: border-box;
   border-radius: 30px;
-  width: 90%;
+  width: 80%;
   text-align: center;
 }
 
@@ -141,24 +146,39 @@
 
 .div_ul_menu {
   display: flex;
-  margin: 60px 0px 0px 15px;
+  margin: 15% 0% -5% 0%;
   justify-content: center;
   width: 100%;
   padding: 0px;
+  text-align: center;
 }
 
 .div_descargar_cv {
-  display: flex;
-  justify-content: center;
-  margin-top: 10%;
+  display: grid;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  align-content: center;
+  margin-top: 8%;
   width: 100%;
   color: aqua;
   font-size: 16px;
 }
 
-.div_descargar_cv:hover {
+.div_descargar_cv a {
+  text-align: center;
+  text-decoration: none;
+  color: rgb(0, 238, 255);
+  margin-top: 3%;
+  margin-bottom: 0%;
+  border-radius: 30px;
+  padding: 5% 15% 5% 15%;
+  width: 50%;
+}
+
+.div_descargar_cv a:hover {
+  background-color: rgb(150, 6, 6);
   text-decoration: underline;
-  cursor: pointer;
+  color: white;
 }
 
 .encabezado_menu {

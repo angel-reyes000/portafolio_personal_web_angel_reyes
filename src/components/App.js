@@ -6,6 +6,7 @@ import Contacto from './contacto'
 import Experiencia from './experiencia'
 import Habilidades_stack from './habilidades_stack'
 import Sobre_mi from './sobre_mi'
+import CV from '../assets/CV Angel R. 2026.pdf'
 
 function Inicio () {
 
@@ -63,7 +64,8 @@ export default function Portafolio () {
                     </div>
                     <hr />
                     <div className='div_descargar_cv'>
-                      <a>Descargar CV</a>
+                      <a href={CV} target='_blank' rel='noreferrer'>Mirar CV</a>
+                      <a href={CV} download='CV_Angel_Reyes.pdf'>Descargar CV</a>
                     </div>
                   </div>
                   ) : (
