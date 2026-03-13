@@ -6,6 +6,7 @@ import Chatbot_Botpress from '../assets/imagenes_proyectos/Foto chatbot con botp
 import TicTacToePyQt6_Python from '../assets/imagenes_proyectos/Foto tic-Tac-Toe PyQt6 Python.png'
 import SemaforoPyQt6_Python from '../assets/imagenes_proyectos/Foto semaforo PyQt6 Python.png'
 import PortafolioReact from '../assets/imagenes_proyectos/Foto portafolio React.png'
+import DiseñoCV from '../assets/imagenes_proyectos/Foto diseño pagina CV .png'
 import { useEffect } from 'react'
 
 export default function Proyectos () {
@@ -16,6 +17,7 @@ export default function Proyectos () {
     })
 
     let ids = 0;
+    //estructura: {id: ids++, foto: ----, url:----, titulo: ----, descripcion: ----},
     const proyectos = [
         {id: ids++, foto: PortafolioReact, url: '', titulo: 'Portafolio personal con React', descripcion: 'Es un portafolio web personal donde se presenta mi perfil de desarrollador, mis habilidades, algunos proyectos realizados y formas de contacto. Funciona como un currículum digital para mostrar experiencia y trabajo en desarrollo web.\nLa programacion se hizo con el Framework "React" y lenguajes como JavaScript, HTML, CSS y SCSS'},
         {id: ids++, foto: AutomatizacoinZapier, url: 'https://asistente-educativo.zapier.app/', titulo: 'Inteligencia Artificial de asistente educativo', descripcion: 'La página es un asistente educativo basado en inteligencia artificial diseñado para ayudar a estudiantes de la universidad Tecmilenio, especialmente en dudas sobre horarios, gym y carreras. Permite hacer preguntas y recibir orientación sobre los temas ya mencionados.\nConectados con herramientas de inteligencia artificial y automatización.\nInteligencia Artificial (modelo tipo ChatGPT) integrada mediante Zapier'},
@@ -24,6 +26,7 @@ export default function Proyectos () {
         {id: ids++, foto: TicTacToePyQt6_Python, url: '', titulo: 'Tic-Tac-Toe con PyQt6 (Python)', descripcion: 'Juego de Tic-Tac-Toe hecho con el Framework "PyQt6" en Python, usando el modulo "random" para simular el juego automatico de la maquina contra el usuario.'},
         {id: ids++, foto: SemaforoPyQt6_Python, url: '', titulo: 'Semaforo con PyQt6 (Python)', descripcion: 'Simulacion de cambio de colores de un semaforo con el Framework "PyQt6" en Python, tiene un boton para cambiar el color y otro para cerrar la interfaz'},
         {id: ids++, foto: CvAnterior, url: 'https://angelreyescvv.netlify.app/', titulo: 'CV Angel Reyes(Desactualizado)', descripcion: 'Es un portafolio web personal donde se presenta mi perfil de desarrollador, sus habilidades, algunos proyectos realizados y formas de contacto. Funciona como un currículum digital para mostrar experiencia y trabajo en desarrollo web.\npublicada en internet mediante Netlify\nLa programacion se hizo con HTML, CSS y SCSS'},
+        {id: ids++, foto: DiseñoCV, url: 'https://www.figma.com/design/ZlqWd6TzAqoCTEC9iBWYHA/Portafolio-web-Angel-Reyes?node-id=0-1&t=SssiFppp9YlV2sXJ-1', titulo: 'Diseño de portafolio personal', descripcion: 'Diseño de portafolio personal, usando Figma, donde se presenta mi perfil de desarrollador, mis habilidades, algunos proyectos realizados y formas de contacto. Funciona como un currículum digital para mostrar experiencia y trabajo en desarrollo web.'},
     ]
 
     return (
