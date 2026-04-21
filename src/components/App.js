@@ -62,8 +62,9 @@ export default function Portafolio () {
                         <li onClick={() => setSecciones('sobre mi')} className='li_menu'>Sobre mi</li>
                       </ul>
                     </div>
-                    <hr />
+                    
                     <div className='div_descargar_cv'>
+                      <hr style={{marginBottom: '0%'}}/>
                       <a href={CV} target='_blank' rel='noreferrer'>Mirar CV</a>
                       <a href={CV} download='CV_Angel_Reyes.pdf'>Descargar CV</a>
                     </div>
