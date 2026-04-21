@@ -12,7 +12,7 @@ import img8 from '../assets/imagenes_certificaciones/Foto certificado computacio
 import img9 from '../assets/imagenes_certificaciones/Foto certificado desarrollo de aplicaciones moviles.png'
 import img10 from '../assets/imagenes_certificaciones/Foto certificado desarrollo full stack.png'
 import img11 from '../assets/imagenes_certificaciones/Foto certificado estructura de datos.png'
-import img12 from '../assets/imagenes_certificaciones/Foto certificado fundamentos de C++ 1.png'
+import img12 from '../assets/imagenes_certificaciones/Foto certificado fundamentos de Cpp 1.png'
 import img13 from '../assets/imagenes_certificaciones/Foto certificado fundamentos de CSS.png'
 import img14 from '../assets/imagenes_certificaciones/Foto certificado fundamentos de HTML.png'
 import img15 from '../assets/imagenes_certificaciones/Foto certificado fundamentos de JS1.png'
